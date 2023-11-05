@@ -76,13 +76,34 @@ body {
 }
 
 .mode-text {
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    opacity: 0.7;
+    position: relative;
+    padding: 10px 20px;
+    margin: 0px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 15px;
+    background: #2a282b; 
+    color: rgba(179, 0, 0, 0.8);
+    box-shadow:
+        -5px -5px 10px #494849, 
+        5px 5px 10px #0b0b0b;
+    transition: all 0.3s ease;
 }
+
+.bright-mode {
+    background: #c2c2c2;
+    box-shadow:
+        -5px -5px 10px #a4a4a4, 
+        5px 5px 10px #d9d9d9;
+    color:rgba(0, 141, 0, 0.8); 
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+}
+

@@ -64,6 +64,7 @@ body {
         2px 2px 1px 2px #d9d9d9,
         -12px -12px 15px #c0c0c0,
         12px 12px 15px #d9d9d9;
+        
 }
 
 .darkswitch-active .toggle-btn {
@@ -77,14 +78,14 @@ body {
 
 .mode-text {
     position: relative;
-    padding: 10px 20px;
+    padding: 35px 35px;
     margin: 0px;
     font-size: 24px;
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 15px;
     background: #2a282b; 
-    color: rgba(179, 0, 0, 0.8);
+    color: rgba(203, 0, 0, 0.8);
     box-shadow:
         -5px -5px 10px #494849, 
         5px 5px 10px #0b0b0b;
@@ -105,5 +106,27 @@ body {
     align-items: center;
     justify-content: center;
     gap: 85px;
+}
+
+.pressed {
+    transform: translateY(3px);
+    box-shadow: 
+        -1px -1px 1px 2px #0b0b0b,
+        1px 1px 1px 1px #545454,
+        -10px -10px 12px #494849,
+        10px 10px 12px #0b0b0b;
+        .pressed {
+            transform: translateY(2px);
+            transition: transform 0.1s ease;
+        }
+        
+}
+
+.darkswitch-active.pressed {
+    box-shadow: 
+        -1px -1px 1px 2px #b1b1b1,
+        1px 1px 1px 1px #d9d9d9,
+        -10px -10px 12px #c0c0c0,
+        10px 10px 12px #d9d9d9;
 }
 

@@ -4,6 +4,9 @@ function toggleSwitch() {
     var darkswitch = document.querySelector('.darkswitch');
     var modeText = document.querySelector('.mode-text');
 
+    darkswitch.classList.add('pressed');
+    setTimeout(() => darkswitch.classList.remove('pressed'), 60); 
+
     toggleBtn.classList.toggle('toggle-active');
     darkswitch.classList.toggle('darkswitch-active');
 

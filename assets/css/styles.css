@@ -1,20 +1,26 @@
 body {
-    background-color: #000; 
+    background-color: #413f42;
     transition: background-color 0.3s;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
   
-  .darkswitch {
+.darkswitch {
     position: relative;
-    width: 80px;
-    height: 40px;
-    margin: 20px;
-    background: linear-gradient(145deg, rgba(34,34,34,1) 0%, rgba(17,17,17,1) 100%);
-    box-shadow: inset 0 2px 5px rgba(255, 255, 255, 0.1), inset 0 -2px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 50px;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(130deg, #646265, #101010);
+    box-shadow:
+        -2px -2px 1px 3px #1b1b1b,
+        2px 2px 1px 2px #686868,
+        -12px -12px 15px #605e61,
+        12px 12px 15px #1b1b1b;
+    border-radius: 50%;
     cursor: pointer;
-    border: 3px solid transparent;
-    background-clip: padding-box; 
-  }
+    transition: 0.2s ease;
+}
 
   .toggle-btn {
     width: 100%;

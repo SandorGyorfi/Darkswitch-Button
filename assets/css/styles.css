@@ -37,11 +37,13 @@ body {
   }
   
   .toggle-active .inner-circle {
-    left: 44px; 
-    background-color: #f00; 
+    left: calc(100% - 38px);
+    background-color: #f00;
+    box-shadow: 0 0 10px rgba(255,0,0,0.7);
   }
   
-  .toggle-active {
-    border-color: #f00; 
+  .toggle-active .toggle-btn {
+    border-color: #f00;
+    box-shadow: 0 0 15px rgba(255,0,0,0.6);
   }
   

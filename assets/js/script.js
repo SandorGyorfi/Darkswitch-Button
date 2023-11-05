@@ -2,15 +2,17 @@ function toggleSwitch() {
     var body = document.body;
     var toggleBtn = document.querySelector('.toggle-btn');
     var darkswitch = document.querySelector('.darkswitch');
-  
+
     toggleBtn.classList.toggle('toggle-active');
-    darkswitch.classList.toggle('darkswitch-active');  
-  
+    darkswitch.classList.toggle('darkswitch-active');
+
     if (toggleBtn.classList.contains('toggle-active')) {
-      body.style.backgroundColor = "#fff";  
-      darkswitch.style.boxShadow = "-0px -0px 1px 3px #1b1b1b, 0px 0px 1px 2px #686868, -3px -3px 15px #605e61, 3px 3px 15px #1b1b1b";  // Active box shadow.
+        body.style.backgroundColor = "#c2c2c2";
+        darkswitch.style.boxShadow = "-2px -2px 1px 3px #8a8a8a, 2px 2px 1px 2px #cecece, -12px -12px 15px #b9b9b9, 12px 12px 15px #cecece";
     } else {
-      body.style.backgroundColor = "#413f42";  
-      darkswitch.style.boxShadow = "-2px -2px 1px 3px #1b1b1b, 2px 2px 1px 2px #686868, -12px -12px 15px #605e61, 12px 12px 15px #1b1b1b";  // Default box shadow.
+        body.style.backgroundColor = "#2a282b";
+        darkswitch.style.boxShadow = "-2px -2px 1px 3px #0b0b0b, 2px 2px 1px 2px #545454, -12px -12px 15px #494849, 12px 12px 15px #0b0b0b";
     }
 }
+
+document.querySelector('.darkswitch').addEventListener('click', toggleSwitch);

@@ -1,0 +1,12 @@
+body {
+    background-color: #000; 
+    transition: background-color 0.3s;
+  }
+  
+  .darkswitch {
+    position: relative;
+    width: 80px; 
+    height: 40px;
+    margin: 20px;
+  }
+  
